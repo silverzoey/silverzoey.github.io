@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>手机攻略</title>
+    <script type="text/javascript" src="echarts.min.js"></script>
+    <script type="text/javascript" src="china.js"></script>
+    <script type="text/javascript" src="echarts-wordcloud.min.js"></script>
+</head>
+
+<body>
+    <!--图标显示的区域-->
+
+    <!-- <div id="showView" style="width: 600px;height: 400px"></div> -->
+    <div id="background">
+        <h1>手机攻略</h1>
+    </div>
+    <div id="body">
+        <p>你有多依赖手机？出门可以忘记钱包但不能忘记手机，不带手机出门就像丢了魂一样，全身不自在， 卡巴斯基的手机依赖度调查显示，69%的人出门时必带手机，20%的人经常在吃饭睡觉、上卫生间时使用手机； 43%的人早上起床第一件事就是查看手机，75%的人在不想和别人说话时就装作忙着用手机。另有23%的受访者表示：出门不带手机还不如裸奔。
+        </p>
+        <div id="echart3"></div>
+
+        <p>苹果？谷歌？三星？华为？OPPO？黑莓？优秀的智能手机如此之多，如何从中选出体验一流且符合自己需求的精品？目前手机市场正不断创新，各大品牌之间激烈地追逐，面对功能各异、多种外观可供选择的手机，哪一个品牌才是性价比最高、最适合你的呢？希望以下数据能给屏幕前的你提供一些参考。
+        </p>
+
+        <h2>一、大家是如何选择的？</h2>
+        <h3>苹果征服近一半省份</h3>
+        <div id="echart2"></div>
+        <p>苹果用户量在四川、北京、广东、浙江等16个省（包括港澳台地区）占据TOP1；OPPO在新疆、西藏、内蒙古、云南、贵州等12个省占据TOP1；华为占据5省TOP1，分别是陕西、河南、山东、黑龙江、海南；而VIVO仅在广西一省中拥有最多用户量。
+        </p>
+
+
+        <h3>学历带来的选择差异</h3>
+        <div id="echart9"></div>
+        <p>本科学历和高中及以下的低文凭同时偏爱苹果手机。</p>
+
+
+        <h3>少女偏爱AOV，熟男偏爱华为和小米</h3>
+        <div id="container">
+            <div id="echart4"></div>
+            <div id="echart5"></div>
+        </div>
+        <p>华为和小米主打男性、25-34岁市场，APPLE、OPPO和VIVO则主打女性、18-24岁市场。</p>
+
+
+        <h3>品牌定位决定主打受众性别</h3>
+        <div id="echart1"></div>
+        <p>无论男女，都对苹果手机有着最高的热情度。同时，男性还很偏爱华为，以11.5%的男性用户紧追苹果；女性则相对喜欢OPPO，分别以2.6%和1.9%略高于华为和VIVO。 为什么出现女生更多喜欢OPPO和vivo，而男生更喜欢华为和小米的现象呢？女性购买手机更注重品牌、外观、自拍、售后服务等因素；男生购买手机更注重的是性价比、参数性能等因素。在营销方面，OPPO和vivo更注重品牌推广，做精致的外观、优质的产品做到质量保证；而华为和小米更注重在参数上做文章，小米性价比超高更受男生欢迎，华为则通过爱国营销策略和高端商务产品吸引更多高端商务男士人群。
+        </p>
+
+
+        <h2>二、手机价格分布</h2>
+        <div id="echart7"></div>
+        <p>整体用户的手机价位主要集中在2000元以下和4000元之间，呈现出两极分化的趋势。VIVO、OPPO、华为手机价格大多分布在1000-1999元，也由此成为大多数用户的选择。小米用户的手机在1000元以下价位最多，达到47.8%，苹果用户的手机价位则98.5%在4000元以上。 用户应该根据自己的经济条件来选择适合自己的手机，超出经济能力范围的选择是不明智的，并不是说手机价格越高越好，我们追求的不应是“面子”，而是“性价比”，适合自己的才最好。
+        </p>
+
+
+        <h2>三、不买肾，攒几个月的钱够买一部IPhone XS？</h2>
+        <div id="echart8"></div>
+        <p>国家统计局的数据显示，城镇非私营单位就业人员月平均工资最高10975元，最低 元；人均最高月消费5216元，最低2287元。据此我们可以进行一个粗略的计算，（平均工资-平均消费水平）/手机价格8199。在一线城市正常消费，大约攒4个月的钱就可以拥有一部IPhone XS；在二、三线城市正常生活，购买一部XS大约需要攒钱5-6个月。
+        </p>
+
+        <h2>四、只选对的不选贵的</h2>
+        <p>购买手机时，很多人首要考虑的就是价格，但是也万万不能忽略了其他条件。挑选一部高性价比手机，就要求在自我承受的价格范围内，最大需求功能达到最高值，其他性能均衡。 首先，筛选出2-3部自己心仪的手机，列出需要考虑的关键条件；其次，明确自己的需求。如果你喜欢“拍照神器”，那么优先选择像素高的摄像头；如果你希望手机能超长续航，就要选择容量更大的电池；如果你对屏幕显示十分苛刻，分辨率和色彩指数则更为重要。 在此，以华为P30 Pro、Iphone xs max、小米9、OPPO Reno、VIVO
+            X27 Pro五大品牌的最新款手机进行价格、屏幕分辨率、最高像素和电池容量四个维度进行横纵向对比。
+        </p>
+        <h4>五大品牌最新款手机参数对比</h4>
+        <div id="echart6"></div>
+
+        <p>琳琅满目的手机市场，每一款产品都有其自己的特点，或抗摔、或价低、或清晰，选手机不能盲目追随潮流，使自身需求和手机特点相配适是我们的最终目的。读完了本文，纠结的你，想好了吗？</p>
+    </div>
+
+    <style type="text/css">
+        #echart1 {
+            height: 400px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #echart2 {
+            height: 400px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #echart3 {
+            height: 400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        #echart4 {
+            height: 400px;
+            width: 40%;
+            float: left;
+            margin-right: 2%;
+        }
+        
+        #echart5 {
+            height: 400px;
+            width: 50%;
+            float: left;
+        }
+        
+        #container {
+            overflow: hidden;
+        }
+        /* 清除浮动 */
+        
+        #echart6 {
+            height: 500px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #echart7 {
+            height: 400px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #echart8 {
+            height: 550px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        #echart9 {
+            height: 400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        #background {
+            margin: 0 auto;
+            height: 400px;
+            width: 100%;
+            background: url("background.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        
+        #body {
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            line-height: 400px;
+        }
+        
+        h4 {
+            text-align: center;
+        }
+        
+        p {
+            text-indent: 2em;
+            /*em是相对单位，2em即现在一个字大小的两倍*/
+            line-height: 200%;
+        }
+    </style>
+    <script type="text/javascript">
+        //找出div
+        var showDiv1 = document.getElementById("echart1");
+        var showDiv2 = document.getElementById("echart2");
+        var showDiv3 = document.getElementById("echart3");
+        var showDiv4 = document.getElementById("echart4");
+        var showDiv5 = document.getElementById("echart5");
+        var showDiv6 = document.getElementById("echart6");
+        var showDiv7 = document.getElementById("echart7");
+        var showDiv8 = document.getElementById("echart8");
+        var showDiv9 = document.getElementById("echart9");
+
+        //初始化
+        var chart = echarts.init(showDiv1);
+        //设置配置数据
+        /*   
+		title
+		legend：图例
+		x/yAxis：坐标轴上需要显示的内容
+		series：
+		name：数据名字
+	    type：图表类型
+		data:数据
+        */
+        var option = {
+            title: {
+                text: "不同性别的选择差异",
+                subtext: "百分比%",
+                left: "center"
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                },
+                //     formatter: function(params){return Math.max(params.value,-params.value)}
+
+                formatter: function(params) {
+                    return params[0].name +
+                        "<br>男：" + params[0].value +
+                        "<br>女：" + -params[1].value;
+                }
+            },
+            legend: {
+                data: ['男', '女'],
+                left: "right"
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: [{
+                type: 'value'
+            }],
+            yAxis: [{
+                type: 'category',
+                axisTick: {
+                    show: false
+                },
+                data: ['其他', '中兴', '乐视', '金立', '魅族', '三星', '小米', 'VIVO', 'OPPO', '华为', 'APPLE']
+            }],
+            series: [
+
+                {
+                    name: '女',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true
+                        }
+                    },
+                    data: [3.2, 0.3, 0.3, 0.8, 0.9, 1.0, 3.2, 8.0, 9.9, 7.3, 15.0]
+                }, {
+                    name: '男',
+                    type: 'bar',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            formatter: function(params) {
+                                return -params.value
+                            }
+                        }
+                    },
+                    data: [-3.3, -0.4, -0.4, -1.0, -1.5, -1.5, -5.8, -6.3, -7.0, -11.3, -11.5]
+                }
+            ]
+        };
+        //将配置数据加给图表
+        chart.setOption(option);
+
+        var chart = echarts.init(showDiv2);
+
+        function randomData() {
+            return Math.round(Math.random() * 1000);
+        }
+
+        var option = {
+            title: {
+                text: '各省份Top1品牌',
+                subtext: '2018',
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['OPPO', '苹果', '华为', 'VIVO']
+            },
+            visualMap: {
+                min: 0,
+                max: 3,
+                left: 'left',
+                top: 'bottom',
+                text: ['高', '低'], // 文本，默认为数值文本
+                calculable: true
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                left: 'right',
+                top: 'center',
+                feature: {
+                    dataView: {
+                        readOnly: false
+                    },
+                    restore: {},
+                    saveAsImage: {}
+                }
+            },
+            series: [{
+                name: 'OPPO',
+                type: 'map',
+                mapType: 'china',
+                roam: false,
+                label: {
+                    normal: {
+                        show: true
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data: [{
+                    name: '河北',
+                    value: 0
+                }, {
+                    name: '云南',
+                    value: 0
+                }, {
+                    name: '湖南',
+                    value: 0
+                }, {
+                    name: '安徽',
+                    value: 0
+                }, {
+                    name: '新疆',
+                    value: 0
+                }, {
+                    name: '甘肃',
+                    value: 0
+                }, {
+                    name: '山西',
+                    value: 0
+                }, {
+                    name: '内蒙古',
+                    value: 0
+                }, {
+                    name: '贵州',
+                    value: 0
+                }, {
+                    name: '青海',
+                    value: 0
+                }, {
+                    name: '西藏',
+                    value: 0
+                }, {
+                    name: '宁夏',
+                    value: 0
+                }]
+            }, {
+                name: '苹果',
+                type: 'map',
+                mapType: 'china',
+                label: {
+                    normal: {
+                        show: true
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data: [{
+                    name: '北京',
+                    value: 1
+                }, {
+                    name: '天津',
+                    value: 1
+                }, {
+                    name: '上海',
+                    value: 1
+                }, {
+                    name: '重庆',
+                    value: 1
+                }, {
+                    name: '浙江',
+                    value: 1
+                }, {
+                    name: '江西',
+                    value: 1
+                }, {
+                    name: '湖北',
+                    value: 1
+                }, {
+                    name: '吉林',
+                    value: 1
+                }, {
+                    name: '福建',
+                    value: 1
+                }, {
+                    name: '江苏',
+                    value: 1
+                }, {
+                    name: '辽宁',
+                    value: 1
+                }, {
+                    name: '广东',
+                    value: 1
+                }, {
+                    name: '四川',
+                    value: 1
+                }, {
+                    name: '香港',
+                    value: 1
+                }, {
+                    name: '台湾',
+                    value: 1
+                }, {
+                    name: '澳门',
+                    value: 1
+                }]
+            }, {
+                name: '华为',
+                type: 'map',
+                mapType: 'china',
+                label: {
+                    normal: {
+                        show: true
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data: [{
+                    name: '山东',
+                    value: 2
+                }, {
+                    name: '陕西',
+                    value: 2
+                }, {
+                    name: '河南',
+                    value: 2
+                }, {
+                    name: '黑龙江',
+                    value: 2
+                }, {
+                    name: '海南',
+                    value: 2
+                }]
+            }, {
+                name: 'VIVO',
+                type: 'map',
+                mapType: 'china',
+                label: {
+                    normal: {
+                        show: true
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data: [{
+                    name: '广西',
+                    value: 3
+                }, ]
+            }]
+        };
+
+        //将配置数据加给图表
+        chart.setOption(option);
+
+        var myChart = echarts.init(showDiv3);
+        var option = {
+            title: {
+                // text: '热点分析',
+                link: 'https://www.baidu.com/s?wd=' + encodeURIComponent('ECharts'),
+                x: 'center',
+                textStyle: {
+                    fontSize: 23
+                }
+
+            },
+            // backgroundColor: '#F7F7F7',
+            tooltip: {
+                show: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {
+                        iconStyle: {
+                            normal: {
+                                color: '#FFFFFF'
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                // name: '热点分析',
+                type: 'wordCloud',
+                //size: ['9%', '99%'],
+                sizeRange: [6, 66],
+                //textRotation: [0, 45, 90, -45],
+                rotationRange: [-45, 90],
+                //shape: 'circle',
+                textPadding: 0,
+                autoSize: {
+                    enable: true,
+                    minSize: 6
+                },
+                textStyle: {
+                    normal: {
+                        color: function() {
+                            return 'rgb(' + [
+                                Math.round(Math.random() * 160),
+                                Math.round(Math.random() * 160),
+                                Math.round(Math.random() * 160)
+                            ].join(',') + ')';
+                        }
+                    },
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowColor: '#333'
+                    }
+                },
+                data: [{
+                    name: "Jayfee",
+                    value: 666
+                }, {
+                    name: "Nancy",
+                    value: 520
+                }]
+            }]
+        };
+
+        var JosnList = [];
+
+        JosnList.push({
+            name: "VIVO",
+            value: 666
+        }, {
+            name: "APPLE",
+            value: 520
+        }, {
+            name: "华为",
+            value: "999"
+        }, {
+            name: "OPPO",
+            value: "888"
+        }, {
+            name: "一加",
+            value: "777"
+        }, {
+            name: "索尼移动",
+            value: "688"
+        }, {
+            name: "三星",
+            value: "588"
+        }, {
+            name: "荣耀",
+            value: "516"
+        }, {
+            name: "小米",
+            value: "515"
+        }, {
+            name: "魅族",
+            value: "483"
+        }, {
+            name: "努比亚",
+            value: "462"
+        }, {
+            name: "中兴",
+            value: "449"
+        }, {
+            name: "联想",
+            value: "429"
+        }, {
+            name: "锤子科技",
+            value: "407"
+        }, {
+            name: "黑鲨",
+            value: "406"
+        }, {
+            name: "LG",
+            value: "406"
+        }, {
+            name: "美图",
+            value: "386"
+        }, {
+            name: "华硕",
+            value: "385"
+        }, {
+            name: "HTC",
+            value: "375"
+        }, {
+            name: "SUGAR",
+            value: "355"
+        }, {
+            name: "MOTO",
+            value: "355"
+        }, {
+            name: "酷派",
+            value: "335"
+        }, {
+            name: "黑莓",
+            value: "324"
+        }, {
+            name: "海信",
+            value: "304"
+        }, {
+            name: "8848",
+            value: "304"
+        }, {
+            name: "长虹",
+            value: "284"
+        }, {
+            name: "诺基亚",
+            value: "284"
+        }, {
+            name: "佳通手机",
+            value: "284"
+        }, {
+            name: "步步高",
+            value: "254"
+        }, {
+            name: "阿尔卡特",
+            value: "254"
+        }, {
+            name: "天时达",
+            value: "253"
+        }, {
+            name: "多普达",
+            value: "253"
+        }, {
+            name: "OPSSON",
+            value: "223"
+        }, {
+            name: "AMOI",
+            value: "223"
+        }, {
+            name: "赛博",
+            value: "223"
+        }, {
+            name: "乐视",
+            value: "223"
+        }, {
+            name: "百立丰",
+            value: "223"
+        }, {
+            name: "朵唯",
+            value: "223"
+        }, {
+            name: "EPHONE",
+            value: "223"
+        }, {
+            name: "COOLPAD",
+            value: "223"
+        }, {
+            name: "谷歌",
+            value: "223"
+        }, {
+            name: "宏达",
+            value: "152"
+        }, {
+            name: "TCL",
+            value: "152"
+        }, {
+            name: "DOOV",
+            value: "152"
+        }, {
+            name: "夏新",
+            value: "152"
+        }, {
+            name: "波导",
+            value: "152"
+        }, {
+            name: "CECT",
+            value: "152"
+        }, {
+            name: "奥克斯",
+            value: "152"
+        }, {
+            name: "大显",
+            value: "152"
+        }, {
+            name: "邦华",
+            value: "112"
+        }, {
+            name: "七喜",
+            value: "112"
+        }, {
+            name: "华为",
+            value: "112"
+        });
+
+        option.series[0].data = JosnList;
+
+
+        myChart.setOption(option);
+        myChart.on('click', function(params) {
+            //alert((params.name));
+            window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+
+        });
+
+        //将配置数据加给图表
+        //chart.setOption(option);
+
+
+        var chart = echarts.init(showDiv4);
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data: ['苹果', 'OPPO', 'VIVO', '华为', '小米']
+            },
+            series: [{
+                name: '性别分布',
+                type: 'pie',
+                selectedMode: 'single',
+                radius: [0, '30%'],
+
+                label: {
+                    normal: {
+                        position: 'inner'
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data: [{
+                    value: 359,
+                    name: '女',
+                    // selected: true
+                }, {
+                    value: 239,
+                    name: '男'
+                }]
+            }, {
+                name: '性别分布',
+                type: 'pie',
+                radius: ['40%', '55%'],
+
+                data: [{
+                    value: 119,
+                    name: '苹果'
+                }, {
+                    value: 123,
+                    name: 'OPPO'
+                }, {
+                    value: 117,
+                    name: 'VIVO'
+                }, {
+                    value: 116,
+                    name: '华为'
+                }, {
+                    value: 123,
+                    name: '小米'
+                }]
+            }]
+        };
+
+        //将配置数据加给图表
+        chart.setOption(option);
+
+        var chart = echarts.init(showDiv5);
+        var scaleData = [{
+            'name': '18-24岁',
+            'value': 22.0
+        }, {
+            'name': '25-34岁',
+            'value': 50.2,
+        }, {
+            'name': '35-44岁',
+            'value': 11.1
+        }, {
+            'name': '45岁以上',
+            'value': 6.3
+        }, {
+            'name': '18岁以下',
+            'value': 10.3
+        }, ];
+        var rich = {
+            white: {
+                // color: '#ddd',
+                align: 'center',
+                padding: [3, 0]
+            }
+        };
+        var placeHolderStyle = {
+            normal: {
+                label: {
+                    show: false
+                },
+                labelLine: {
+                    show: false
+                },
+                color: 'rgba(0, 0, 0, 0)',
+                borderColor: 'rgba(0, 0, 0, 0)',
+                borderWidth: 0
+            }
+        };
+        var data = [];
+        var color = ['#00ffff', '#00cfff', '#006ced', '#ffe000', '#ffa800', '#ff5b00', '#ff3000']
+        for (var i = 0; i < scaleData.length; i++) {
+            data.push({
+                value: scaleData[i].value,
+                name: scaleData[i].name,
+                itemStyle: {
+                    normal: {
+                        borderWidth: 0,
+                        shadowBlur: 15,
+                        borderColor: color[i],
+                        shadowColor: color[i]
+                    }
+                }
+            }, {
+                value: 2,
+                name: '',
+                itemStyle: placeHolderStyle
+            });
+        }
+        var seriesObj = [{
+            name: '',
+            type: 'pie',
+            // clockWise: false,
+            selectedMode: 'single',
+            radius: ['30%', '45%'],
+            hoverAnimation: false,
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        position: 'outside',
+                        //color: '#ddd',
+                        formatter: function(params) {
+                            var percent = 0;
+                            var total = 0;
+                            for (var i = 0; i < scaleData.length; i++) {
+                                total += scaleData[i].value;
+                            }
+                            percent = ((params.value / total) * 100).toFixed(1);
+                            if (params.name !== '') {
+                                if (params.name == '18-24岁') {
+                                    return params.name + '\n' + '占比' + percent + '%' + '\n' + '（苹果142' +
+                                        '\n' + 'OPPO144' + '\n' + 'VIVO122）';
+                                }
+                                if (params.name == '25-34岁') {
+                                    return params.name + '\n' + '占比' + percent + '%' + '\n' + '（华为109' +
+                                        '\n' + '小米118）';
+                                }
+                                return params.name + '\n{white|' + '占比' + percent + '%}';
+                            } else {
+                                return '';
+                            }
+                        },
+                        rich: rich
+                    },
+                    labelLine: {
+                        // length: 30,
+                        // length2: 30,
+                        show: true,
+                        color: '#00ffff'
+                    }
+                }
+            },
+            data: data
+        }];
+        option = {
+            //backgroundColor: '#04243E',
+            tooltip: {
+                trigger: 'item',
+                formatter: "{b}: {c}%"
+            },
+            legend: {
+                show: false
+            },
+            toolbox: {
+                show: false
+            },
+            series: seriesObj
+        }
+
+        //将配置数据加给图表
+        chart.setOption(option);
+
+        var chart = echarts.init(showDiv6);
+        option = {
+            // title: {
+            //     text: '五大品牌最新款手机参数对比',
+            //     textStyle: {
+            //         fontSize: 16
+            //     },
+            //     subtextStyle: {
+            //         fontSize: 10
+            //     },
+            //     x: 'center'
+            // },
+            tooltip: {},
+            legend: {
+                data: ['华为P30Pro', 'Apple iPhone XS Max', '小米9', 'vivo X27 Pro', 'OPPO Reno']
+            },
+            radar: {
+                // shape: 'circle',
+                name: {
+                    textStyle: {
+                        color: '#fff',
+                        backgroundColor: '#999',
+                        borderRadius: 3,
+                        padding: [5, 10]
+                    }
+                },
+                indicator: [{
+                    name: '价格',
+                    max: 10000
+                }, {
+                    name: '最高像素',
+                    max: 5000
+                }, {
+                    name: '分辨率',
+                    max: 3000 * 2000
+                }, {
+                    name: '电池容量',
+                    max: 4500
+                }]
+            },
+            series: [{
+                name: '预算 vs 开销（Budget vs spending）',
+                type: 'radar',
+                // areaStyle: {normal: {}},
+                data: [{
+                    value: [5988, 4000, 2340 * 1080, 4200],
+                    name: '华为P30Pro'
+                }, {
+                    value: [8999, 1200, 2688 * 1242, 3174],
+                    name: 'Apple iPhone XS Max'
+                }, {
+                    value: [3299, 4800, 2340 * 1080, 3300],
+                    name: '小米9'
+                }, {
+                    value: [3998, 4800, 2340 * 1080, 4000],
+                    name: 'vivo X27 Pro'
+                }, {
+                    value: [3999, 4800, 2340 * 1080, 4065],
+                    name: 'OPPO Reno'
+                }, ]
+            }]
+        };
+
+        //将配置数据加给图表
+        chart.setOption(option);
+
+        var chart = echarts.init(showDiv7);
+        var spNum = 5,
+            _max = 100;
+        var legendData = ['1000元以下', '1000-1999元', '2000-2999元', '3000-3999元', '4000元以上'];
+        var y_data = ['整体占比', '苹果', '华为', 'OPPO', 'VIVO', '小米'];
+        var _datamax = [100, 100, 100, 100, 100, 100],
+            _data1 = [16.8, 0, 22.7, 9.9, 18.9, 47.8],
+            _data2 = [24.8, 0, 32, 41.8, 58, 34.2],
+            _data3 = [15.1, 0, 23.8, 41.4, 20.6, 14.4];
+        _data4 = [5.4, 1.5, 17, 6.9, 2.3, 3.7];
+        _data5 = [37.8, 98.5, 4.4, 0, 0, 0];
+        var fomatter_fn = function(v) {
+            return (v.value / _max * 100).toFixed(1) + '%'
+        }
+        var _label = {
+            normal: {
+                show: true,
+                position: 'inside',
+                formatter: fomatter_fn,
+                textStyle: {
+                    color: '#fff',
+                    fontSize: 12
+                }
+            }
+        };
+        option = {
+            //backgroundColor: '#091034',
+            legend: {
+                data: legendData,
+                textStyle: {
+                    //color: '#ccc'
+                }
+            },
+            grid: {
+                containLabel: true,
+                left: 0,
+                right: 15,
+                bottom: 30
+            },
+            tooltip: {
+                show: true,
+                backgroundColor: '#fff',
+                borderColor: '#ddd',
+                borderWidth: 1,
+                textStyle: {
+                    color: '#3c3c3c',
+                    fontSize: 16
+                },
+                formatter: function(p) {
+                    console.log(p);
+                    var _arr = p.seriesName.split('/'),
+                        idx = p.seriesIndex; //1，2，3
+                    return '价格：' + p.seriesName + '<br>' + '占比：' + (p.value / _max * 100).toFixed(1) + '%';
+                },
+                extraCssText: 'box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)'
+            },
+            xAxis: {
+                splitNumber: spNum,
+                interval: _max / spNum,
+                max: _max,
+                axisLabel: {
+                    show: false,
+                    formatter: function(v) {
+                        var _v = (v / _max * 100).toFixed(0);
+                        return _v == 0 ? _v : _v + '%';
+                    }
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                }
+
+            },
+            yAxis: [{
+                data: y_data,
+                axisLabel: {
+                    fontSize: 16,
+                    //color: '#fff'
+
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                }
+            }, {
+                show: false,
+                data: y_data,
+                axisLine: {
+                    show: false
+                }
+            }],
+            series: [{
+                type: 'bar',
+                name: '1000元以下',
+                stack: '2',
+                label: _label,
+                legendHoverLink: false,
+                barWidth: 40,
+                itemStyle: {
+                    normal: {
+                        color: '#9FB6CD'
+                    },
+                    emphasis: {
+                        color: '#9FB6CD'
+                    }
+                },
+                data: _data1
+            }, {
+                type: 'bar',
+                name: '1000-1999元',
+                stack: '2',
+                legendHoverLink: false,
+                barWidth: 40,
+                label: _label,
+                itemStyle: {
+                    normal: {
+                        color: '#607B8B'
+                    },
+                    emphasis: {
+                        color: '#607B8B'
+                    }
+                },
+                data: _data2
+            }, {
+                type: 'bar',
+                stack: '2',
+                name: '2000-2999元',
+                legendHoverLink: false,
+                barWidth: 40,
+                label: _label,
+                itemStyle: {
+                    normal: {
+                        color: '#C1CDCD'
+                    },
+                    emphasis: {
+                        color: '#C1CDCD'
+                    }
+                },
+                data: _data3
+            }, {
+                type: 'bar',
+                stack: '2',
+                name: '3000-3999元',
+                legendHoverLink: false,
+                barWidth: 40,
+                label: _label,
+                itemStyle: {
+                    normal: {
+                        color: '#838B8B'
+                    },
+                    emphasis: {
+                        color: '#838B8B'
+                    }
+                },
+                data: _data4
+            }, {
+                type: 'bar',
+                stack: '2',
+                name: '4000元以上',
+                legendHoverLink: false,
+                barWidth: 40,
+                label: _label,
+                itemStyle: {
+                    normal: {
+                        color: '#CDCDC1'
+                    },
+                    emphasis: {
+                        color: '#CDCDC1'
+                    }
+                },
+                data: _data5
+            }]
+        };
+
+        //将配置数据加给图表
+        chart.setOption(option);
+
+        var myChart = echarts.init(showDiv8);
+
+        function randomData() {
+            return Math.round(Math.random() * 11000);
+        }
+
+        var option = {
+            title: {
+                text: '2017部分省区市月平均工资',
+                subtext: '城镇非私营单位就业人员月平均工资（单位：元）',
+                textStyle: {
+                    fontSize: 16
+                },
+                subtextStyle: {
+                    fontSize: 10
+                },
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}:{c}'
+            },
+            visualMap: {
+                seriesIndex: 0,
+                min: 0,
+                max: 11000,
+                left: 'left',
+                top: 'bottom',
+                text: ['高', '低'], // 文本，默认为数值文本
+                calculable: true,
+                inRange: {
+                    color: ['#00467F', '#A5CC82']
+                }
+            },
+            grid: {
+                height: 200,
+                width: 8,
+                right: 80,
+                bottom: 10
+            },
+            xAxis: {
+                type: 'category',
+                data: [],
+                splitNumber: 1,
+                show: false
+            },
+            yAxis: {
+                position: 'right',
+                min: 0,
+                max: 20,
+                splitNumber: 20,
+                inverse: true,
+                axisLabel: {
+                    show: true
+                },
+                axisLine: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                data: []
+            },
+            series: [{
+                zlevel: 1,
+                name: '中国',
+                type: 'map',
+                mapType: 'china',
+                selectedMode: 'multiple',
+                roam: true,
+                left: 0,
+                right: 0,
+                // right: '15%',
+                label: {
+                    normal: {
+                        show: true
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data: [{
+                        name: '北京',
+                        value: 10975
+                    }, {
+                        name: '天津',
+                        value: 6209
+                    }, {
+                        name: '上海',
+                        value: 8378
+                    }, {
+                        name: '重庆',
+                        value: 5907
+                    }, {
+                        name: '河北',
+                        value: 5253
+                    }, {
+                        name: '河南',
+                        value: 4624
+                    }, {
+                        name: '云南',
+                        value: 5758
+                    }, {
+                        name: '辽宁',
+                        value: 5637
+                    }, {
+                        name: '黑龙江',
+                        value: 4672
+                    }, {
+                        name: '湖南',
+                        value: 5307
+                    }, {
+                        name: '安徽',
+                        value: 5429
+                    }, {
+                        name: '山东',
+                        value: 6125
+                    }, {
+                        name: '新疆',
+                        value: 4637
+                    }, {
+                        name: '江苏',
+                        value: 6522
+                    }, {
+                        name: '浙江',
+                        value: 6729
+                    }, {
+                        name: '江西',
+                        value: 5986
+                    }, {
+                        name: '湖北',
+                        value: 6485
+                    }, {
+                        name: '广西',
+                        value: 5318
+                    }, {
+                        name: '甘肃',
+                        value: 5281
+                    }, {
+                        name: '山西',
+                        value: 5005
+                    }, {
+                        name: '内蒙古',
+                        value: 5556
+                    }, {
+                        name: '陕西',
+                        value: 5431
+                    }, {
+                        name: '吉林',
+                        value: 5120
+                    }, {
+                        name: '福建',
+                        value: 6356
+                    }, {
+                        name: '贵州',
+                        value: 5982
+                    }, {
+                        name: '广东',
+                        value: 6598
+                    }, {
+                        name: '青海',
+                        value: 6308
+                    }, {
+                        name: '西藏',
+                        value: 5365
+                    }, {
+                        name: '四川',
+                        value: 5784
+                    }, {
+                        name: '宁夏',
+                        value: 6103
+                    }, {
+                        name: '海南',
+                        value: 5643
+                    }, {
+                        name: '台湾',
+                        value: 6985
+                    }, {
+                        name: '香港',
+                        value: 7584
+                    }, {
+                        name: '澳门',
+                        value: 7652
+                    }]
+                    // }, {
+                    //     zlevel: 2,
+                    //     name: '地图指示',
+                    //     type: 'bar',
+                    //     barWidth: 5,
+                    //     itemStyle: {
+                    //         normal: {
+                    //             color: undefined,
+                    //             shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    //             shadowBlur: 10
+                    //         }
+                    //     },
+                    //     data: [20]
+            }]
+        };
+
+
+        /**
+         * 根据值获取线性渐变颜色
+         * @param  {String} start 起始颜色
+         * @param  {String} end   结束颜色
+         * @param  {Number} max   最多分成多少分
+         * @param  {Number} val   渐变取值
+         * @return {String}       颜色
+         */
+        function getGradientColor(start, end, max, val) {
+            var rgb = /#((?:[0-9]|[a-fA-F]){2})((?:[0-9]|[a-fA-F]){2})((?:[0-9]|[a-fA-F]){2})/;
+            var sM = start.match(rgb);
+            var eM = end.match(rgb);
+            var err = '';
+            max = max || 1
+            val = val || 0
+            if (sM === null) {
+                err = 'start';
+            }
+            if (eM === null) {
+                err = 'end';
+            }
+            if (err.length > 0) {
+                throw new Error('Invalid ' + err + ' color format, required hex color');
+            }
+            var sR = parseInt(sM[1], 16),
+                sG = parseInt(sM[2], 16),
+                sB = parseInt(sM[3], 16);
+            var eR = parseInt(eM[1], 16),
+                eG = parseInt(eM[2], 16),
+                eB = parseInt(eM[3], 16);
+            var p = val / max;
+            var gR = Math.round(sR + (eR - sR) * p).toString(16),
+                gG = Math.round(sG + (eG - sG) * p).toString(16),
+                gB = Math.round(sB + (eB - sB) * p).toString(16);
+            return '#' + gR + gG + gB;
+        }
+
+        setTimeout(function() {
+            var TOPN = 25
+
+            var option = myChart.getOption()
+                // 修改top
+            option.grid[0].height = TOPN * 20
+            option.yAxis[0].max = TOPN
+            option.yAxis[0].splitNumber = TOPN
+            option.series[1].data[0] = TOPN
+                // 排序
+            var data = option.series[0].data.sort(function(a, b) {
+                return b.value - a.value
+            })
+
+            var maxValue = data[0].value,
+                minValue = data.length > TOPN ? data[TOPN - 1].value : data[data.length - 1].value
+
+            var s = option.visualMap[0].controller.inRange.color[0],
+                e = option.visualMap[0].controller.inRange.color.slice(-1)[0]
+            var sColor = getGradientColor(s, e, maxValue, minValue)
+            var eColor = getGradientColor(s, e, maxValue, maxValue)
+
+            option.series[1].itemStyle.color = new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                offset: 1,
+                color: sColor
+            }, {
+                offset: 0,
+                color: eColor
+            }])
+
+            // yAxis
+            var newYAxisArr = []
+            echarts.util.each(data, function(item, i) {
+                if (i >= TOPN) {
+                    return false
+                }
+                var c = getGradientColor(sColor, eColor, maxValue, item.value)
+                newYAxisArr.push({
+                    value: item.name,
+                    textStyle: {
+                        color: c
+                    }
+                })
+            })
+            option.yAxis[0].data = newYAxisArr
+            option.yAxis[0].axisLabel.formatter = (function(data) {
+                return function(value, i) {
+                    if (!value) return ''
+                    return value + ' ' + data[i].value
+                }
+            })(data)
+            myChart.setOption(option)
+        }, 5);
+
+        //将配置数据加给图表
+        myChart.setOption(option);
+
+        var chart = echarts.init(showDiv9);
+        data = [{
+            name: "高中及以下(苹果107 OPPO108 VIVO125)",
+            value: 31.6
+        }, {
+            name: "专科",
+            value: 34.7
+        }, {
+            name: "本科(华为117 小米122 苹果114)",
+            value: 29.2
+        }, {
+            name: "硕士及以上",
+            value: 4.4
+        }];
+        arrName = getArrayValue(data, "name");
+        arrValue = getArrayValue(data, "value");
+        sumValue = eval(arrValue.join('+'));
+        objData = array2obj(data, "name");
+        optionData = getData(data);
+
+        function getArrayValue(array, key) {
+            var key = key || "value";
+            var res = [];
+            if (array) {
+                array.forEach(function(t) {
+                    res.push(t[key]);
+                });
+            }
+            return res;
+        }
+
+        function array2obj(array, key) {
+            var resObj = {};
+            for (var i = 0; i < array.length; i++) {
+                resObj[array[i][key]] = array[i];
+            }
+            return resObj;
+        }
+
+        function getData(data) {
+            var res = {
+                series: [],
+                yAxis: []
+            };
+            for (let i = 0; i < data.length; i++) {
+                res.series.push({
+                    name: '学历',
+                    type: 'pie',
+                    clockWise: false, //顺时加载
+                    hoverAnimation: false, //鼠标移入变大
+                    radius: [65 - i * 15 + '%', 57 - i * 15 + '%'],
+                    center: ["30%", "55%"],
+                    label: {
+                        show: false
+                    },
+                    itemStyle: {
+                        label: {
+                            show: true,
+                        },
+                        labelLine: {
+                            show: true
+                        },
+                        borderWidth: 5,
+                    },
+                    data: [{
+                        value: data[i].value,
+                        name: data[i].name
+                    }, {
+                        value: sumValue - data[i].value,
+                        name: '',
+                        itemStyle: {
+                            color: "rgba(0,0,0,0)",
+                            borderWidth: 0
+                        },
+                        tooltip: {
+                            show: false
+                        },
+                        hoverAnimation: false
+                    }]
+                });
+                res.series.push({
+                    name: '',
+                    type: 'pie',
+                    silent: true,
+                    z: 1,
+                    clockWise: false, //顺时加载
+                    hoverAnimation: false, //鼠标移入变大
+                    radius: [65 - i * 15 + '%', 57 - i * 15 + '%'],
+                    center: ["30%", "55%"],
+                    label: {
+                        show: false
+                    },
+                    itemStyle: {
+                        label: {
+                            show: true,
+                        },
+                        labelLine: {
+                            show: true
+                        },
+                        borderWidth: 5,
+                    },
+                    data: [{
+                        value: 7.5,
+                        itemStyle: {
+                            color: "#E3F0FF",
+                            borderWidth: 0
+                        },
+                        tooltip: {
+                            show: false
+                        },
+                        hoverAnimation: false
+                    }, {
+                        value: 2.5,
+                        name: '',
+                        itemStyle: {
+                            color: "rgba(0,0,0,0)",
+                            borderWidth: 0
+                        },
+                        tooltip: {
+                            show: false
+                        },
+                        hoverAnimation: false
+                    }]
+                });
+                res.yAxis.push((data[i].value / sumValue * 100).toFixed(1) + "%");
+            }
+            return res;
+        }
+
+        option = {
+            backgroundColor: '#fff',
+            legend: {
+                show: true,
+                top: "center",
+                left: '70%',
+                data: arrName,
+                itemWidth: 30,
+                itemHeight: 20,
+                width: 50,
+                padding: [0, 5],
+                itemGap: 25,
+                formatter: function(name) {
+                    return "{title|" + name + "}\n{value|" + (objData[name].value) + "}"
+                },
+                textStyle: {
+                    rich: {
+                        title: {
+                            fontSize: 10,
+                            lineHeight: 10,
+                            color: "rgba(0,0,0,.45)"
+                        },
+                        value: {
+                            fontSize: 14,
+                            lineHeight: 18,
+                            color: "rgba(0,0,0,.85)"
+                        }
+                    }
+                },
+            },
+            tooltip: {
+                show: true,
+                trigger: "item",
+                formatter: "{a}<br>{b}:{d}%"
+            },
+            color: ['#FF8700', '#ffc300', '#00e473', '#009DFF'],
+            grid: {
+                top: '20%',
+                bottom: '48%',
+                left: "30%",
+                containLabel: false
+            },
+            yAxis: [{
+                type: 'category',
+                inverse: true,
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLabel: {
+                    interval: 0,
+                    inside: true,
+                    textStyle: {
+                        color: "#000",
+                        fontSize: 10,
+                    },
+                    show: true
+                },
+                data: optionData.yAxis
+            }],
+            xAxis: [{
+                show: false
+            }],
+            series: optionData.series
+        };
+
+        //将配置数据加给图表
+        chart.setOption(option);
+    </script>
+</body>
+
+<footer>
+    <p>Posted by: 莫梓洁</p>
+    <!-- <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p> -->
+</footer>
+
+</html>
