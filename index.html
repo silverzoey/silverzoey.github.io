@@ -147,9 +147,16 @@
             margin: 0 auto;
         }
         
+        body {
+            margin: 0px 0px 15px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+        
         h1 {
             text-align: center;
             line-height: 800px;
+            margin: 0px 0px 15px 0px;
+            padding: 0px 0px 0px 0px;
         }
         
         h4 {
@@ -282,7 +289,11 @@
                 left: 'left',
                 top: 'bottom',
                 text: ['高', '低'], // 文本，默认为数值文本
-                calculable: true
+                calculable: true,
+                inRange: {
+                    color: ['#ffe000', '#ff3000 ']
+                        // #00ffff', '#00cfff', '#006ced', '#ffe000', '#ffa800', '#ff5b00', '#ff3000'
+                }
             },
             toolbox: {
                 show: true,
