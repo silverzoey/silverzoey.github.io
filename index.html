@@ -37,7 +37,7 @@
 
 
         <h3>少女偏爱AOV，熟男偏爱华为和小米</h3>
-        <div id="container">
+        <div class="container">
             <div id="echart4"></div>
             <div id="echart5"></div>
         </div>
@@ -57,7 +57,10 @@
 
 
         <h2>三、不买肾，攒几个月的钱够买一部IPhone XS？</h2>
-        <div id="echart8"></div>
+        <div class="container">
+            <div id="echart8"></div>
+            <div id="iphoneXS"></div>
+        </div>
         <p>国家统计局的数据显示，城镇非私营单位就业人员月平均工资最高10975元，最低 元；人均最高月消费5216元，最低2287元。据此我们可以进行一个粗略的计算，（平均工资-平均消费水平）/手机价格8199。在一线城市正常消费，大约攒4个月的钱就可以拥有一部IPhone XS；在二、三线城市正常生活，购买一部XS大约需要攒钱5-6个月。
         </p>
 
@@ -103,7 +106,7 @@
             float: left;
         }
         
-        #container {
+        .container {
             overflow: hidden;
         }
         /* 清除浮动 */
@@ -115,16 +118,34 @@
         }
         
         #echart7 {
-            height: 400px;
-            width: 80%;
+            height: 450px;
+            width: 100%;
             margin: 0 auto;
         }
         
         #echart8 {
-            height: 550px;
-            width: 80%;
-            margin: 0 auto;
+            height: 400px;
+            width: 50%;
+            float: left;
+            margin-right: 16.3%;
         }
+        
+        #iphoneXS {
+            float: left;
+            width: 33.7%;
+            height: 400px;
+            background: url("iphoneX.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        /* #iphoneXS img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        } */
         
         #echart9 {
             height: 400px;
@@ -136,7 +157,7 @@
             margin: 0 auto;
             height: 800px;
             width: 100%;
-            background: url("IMG_17821.jpg") no-repeat;
+            background: url("IMG_17822.jpg") no-repeat;
             background-size: cover;
             background-position: center center;
             /* background-attachment: fixed; */
@@ -1075,10 +1096,10 @@
                 barWidth: 40,
                 itemStyle: {
                     normal: {
-                        color: '#9FB6CD'
+                        color: '#d58364'
                     },
                     emphasis: {
-                        color: '#9FB6CD'
+                        color: '#d58364'
                     }
                 },
                 data: _data1
@@ -1091,10 +1112,10 @@
                 label: _label,
                 itemStyle: {
                     normal: {
-                        color: '#607B8B'
+                        color: '#91c7af'
                     },
                     emphasis: {
-                        color: '#607B8B'
+                        color: '#91c7af'
                     }
                 },
                 data: _data2
@@ -1107,10 +1128,10 @@
                 label: _label,
                 itemStyle: {
                     normal: {
-                        color: '#C1CDCD'
+                        color: '#c33430'
                     },
                     emphasis: {
-                        color: '#C1CDCD'
+                        color: '#c33430'
                     }
                 },
                 data: _data3
@@ -1123,10 +1144,10 @@
                 label: _label,
                 itemStyle: {
                     normal: {
-                        color: '#838B8B'
+                        color: '#2e4454'
                     },
                     emphasis: {
-                        color: '#838B8B'
+                        color: '#2e4454'
                     }
                 },
                 data: _data4
@@ -1139,10 +1160,10 @@
                 label: _label,
                 itemStyle: {
                     normal: {
-                        color: '#CDCDC1'
+                        color: '#60a1a9'
                     },
                     emphasis: {
-                        color: '#CDCDC1'
+                        color: '#60a1a9'
                     }
                 },
                 data: _data5
