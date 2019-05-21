@@ -136,7 +136,7 @@
             margin: 0 auto;
             height: 800px;
             width: 100%;
-            background: url("background.gif") no-repeat;
+            background: url("IMG_17821.jpg") no-repeat;
             background-size: cover;
             background-position: center center;
             /* background-attachment: fixed; */
@@ -157,6 +157,10 @@
             line-height: 800px;
             margin: 0px 0px 15px 0px;
             padding: 0px 0px 0px 0px;
+            font-family: mFont;
+            font-size: 100px;
+            color: white;
+            letter-spacing: 15px;
         }
         
         h4 {
@@ -167,6 +171,11 @@
             text-indent: 2em;
             /*em是相对单位，2em即现在一个字大小的两倍*/
             line-height: 200%;
+        }
+        
+        @font-face {
+            font-family: mFont;
+            src: url('逼格青春粗黑体简2.0.ttf');
         }
     </style>
     <script type="text/javascript">
@@ -291,8 +300,8 @@
                 text: ['高', '低'], // 文本，默认为数值文本
                 calculable: true,
                 inRange: {
-                    color: ['#ffe000', '#ff3000 ']
-                        // #00ffff', '#00cfff', '#006ced', '#ffe000', '#ffa800', '#ff5b00', '#ff3000'
+                    color: ['#bfd2da', '#2e4454 ']
+                        // color: ['#60a1a9', '#91c7af ']
                 }
             },
             toolbox: {
