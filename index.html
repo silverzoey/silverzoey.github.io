@@ -122,11 +122,13 @@
         
         .container {
             overflow: hidden;
+            height: 400px;
+            width: 900px;
         }
         /* 清除浮动 */
         
         #echart6 {
-            height: 400px;
+            height: 500px;
             width: 80%;
             margin: 0 auto;
         }
@@ -139,16 +141,16 @@
         
         #echart8 {
             height: 400px;
-            width: 70%;
-            /* width: 640px; */
+            /* width: 70%; */
+            width: 640px;
             float: left;
-            margin-right: 1.5%;
+            margin-right: 5px;
         }
         
         #iphoneXS {
             float: left;
-            width: 28.5%;
-            /* width: 255px; */
+            /* width: 28.5%; */
+            width: 255px;
             height: 400px;
             background: url("iphoneX.jpg") no-repeat;
             background-size: cover;
@@ -166,7 +168,7 @@
         #change {
             margin: 0 auto;
             height: 400px;
-            width: 80%;
+            width: 530px;
             background: url("增长量.jpg") no-repeat;
             background-size: cover;
             background-position: center center;
@@ -174,14 +176,15 @@
         
         #echart9 {
             height: 400px;
-            width: 100%;
+            width: 80%;
             margin: 0 auto;
         }
         
         #background {
             margin: 0 auto;
             height: 800px;
-            width: 100%;
+            width: 1519px;
+            /* width: 100%; */
             background: url("IMG_17822.jpg") no-repeat;
             background-size: cover;
             background-position: center center;
@@ -1228,12 +1231,13 @@
 
         var myChart = echarts.init(showDiv8);
 
-        var name_title = "2017部分省区市月平均收入和月平均消费"
-        var subname = '城镇非私营单位就业人员月平均收入（单位：元）\n城镇非私营单位就业人员月平均消费（单位：元）'
+        // var name_title = "2017部分省区市月平均收入和月平均消费(城镇非私营单位就业人员)"
+        // var subname = '2017各省城镇居民月平均收入和支出（单位：元）'
+        var name_title = "2017各省城镇居民月平均收入和支出（单位：元）"
         var nameColor = " rgb(55, 75, 113)"
         var name_fontFamily = '等线'
         var subname_fontSize = 15
-        var name_fontSize = 18
+        var name_fontSize = 15
         var mapName = 'china'
         var data = [{
             name: '北京',
@@ -1650,7 +1654,7 @@
         option = {
             title: {
                 text: name_title,
-                subtext: subname,
+                // subtext: subname,
                 x: 'center',
                 textStyle: {
                     color: nameColor,
