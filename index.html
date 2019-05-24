@@ -14,7 +14,7 @@
 
     <!-- <div id="showView" style="width: 600px;height: 400px"></div> -->
     <div id="background">
-        <h1>手机攻略</h1>
+        <h1>购机攻略</h1>
     </div>
     <div id="body">
         <div class="space"></div>
@@ -68,7 +68,7 @@
         <p>用户应该根据自己的经济条件来选择适合自己的手机，超出经济能力范围的选择是不明智的，并不是说手机价格越高越好，我们追求的不应是“面子”，而是“性价比”，适合自己的才最好。</p>
 
 
-        <h2>不买肾，攒几个月的钱够买一部IPhone XS？</h2>
+        <h2>不卖肾，攒几个月的钱够买一部IPhone XS？</h2>
         <div class="container">
             <div id="echart8"></div>
             <div id="iphoneXS"></div>
@@ -79,7 +79,7 @@
 
         <h2>只选对的不选贵的</h2>
         <p>在此，以华为P30 Pro、Iphone xs max、小米9、OPPO Reno、VIVO X27 Pro五大品牌的最新款手机进行价格、屏幕分辨率、最高像素和电池容量四个维度进行横纵向对比。</p>
-        <h3>五大品牌最新款手机参数对比</h3>
+        <!-- <h3>五大品牌最新款手机参数对比</h3> -->
         <div id="echart6"></div>
         <p class="note">数据来源:手机品牌官网参数 采集时间：2019年</p>
         <p>购买手机时，很多人首要考虑的就是价格，但是也万万不能忽略了其他条件。挑选一部高性价比手机，就要求在自我承受的价格范围内，最大需求功能达到最高值，其他性能均衡。</p>
@@ -109,21 +109,21 @@
         
         #echart4 {
             height: 400px;
-            width: 40%;
+            width: 35%;
             float: left;
-            margin-right: 2%;
+            margin-right: 1%;
         }
         
         #echart5 {
             height: 400px;
-            width: 58%;
+            width: 64%;
             float: left;
         }
         
         .container {
             overflow: hidden;
             height: 400px;
-            width: 900px;
+            width: 860px;
         }
         /* 清除浮动 */
         
@@ -142,7 +142,7 @@
         #echart8 {
             height: 400px;
             /* width: 70%; */
-            width: 640px;
+            width: 600px;
             float: left;
             margin-right: 5px;
         }
@@ -280,11 +280,11 @@
 		data:数据
         */
         var option = {
-            title: {
-                text: "不同性别的选择差异",
-                subtext: "百分比%",
-                left: "center"
-            },
+            // title: {
+            //     // text: "不同性别的选择差异",
+            //     subtext: "百分比%",
+            //     left: "center"
+            // },
             tooltip: {
                 trigger: 'axis',
                 axisPointer: { // 坐标轴指示器，坐标轴触发有效
@@ -294,17 +294,17 @@
 
                 formatter: function(params) {
                     return params[0].name +
-                        "<br>男：" + params[0].value +
-                        "<br>女：" + -params[1].value;
+                        "<br>男：" + params[0].value + "%" +
+                        "<br>女：" + -params[1].value + "%";
                 }
             },
             legend: {
                 data: ['男', '女'],
-                left: "right"
+                left: "center"
             },
             grid: {
-                left: '3%',
-                right: '4%',
+                left: '1%',
+                right: '8%',
                 bottom: '3%',
                 containLabel: true
             },
@@ -326,7 +326,10 @@
                     stack: '总量',
                     label: {
                         normal: {
-                            show: true
+                            show: true,
+                            formatter: function(params) {
+                                return params.value + "%"
+                            }
                         }
                     },
                     data: [3.2, 0.3, 0.3, 0.8, 0.9, 1.0, 3.2, 8.0, 9.9, 7.3, 15.0]
@@ -338,7 +341,7 @@
                         normal: {
                             show: true,
                             formatter: function(params) {
-                                return -params.value
+                                return -params.value + "%"
                             }
                         }
                     },
@@ -377,8 +380,10 @@
                 text: ['高', '低'], // 文本，默认为数值文本
                 calculable: true,
                 inRange: {
-                    color: ['#bfd2da', '#2e4454 ']
-                        // color: ['#60a1a9', '#91c7af ']
+                    // color: ['#bfd2da', '#2e4454 ']
+                    // color: ['#60a1a9', '#91c7af ']
+                    color: ['#edfbfb', '#b7d6f3', '#40a9ed', '#3598c1', '#215096', ]
+
                 }
             },
             toolbox: {
@@ -397,6 +402,7 @@
             series: [{
                 name: 'OPPO',
                 type: 'map',
+                // color: 'edfbfb',
                 mapType: 'china',
                 roam: false,
                 label: {
@@ -799,11 +805,11 @@
                 trigger: 'item',
                 formatter: "{a} <br/>{b}: {c} ({d}%)"
             },
-            legend: {
-                orient: 'vertical',
-                x: 'left',
-                data: ['苹果', 'OPPO', 'VIVO', '华为', '小米']
-            },
+            // legend: {
+            //     orient: 'vertical',
+            //     x: 'left',
+            //     data: ['苹果', 'OPPO', 'VIVO', '华为', '小米']
+            // },
             series: [{
                 name: '性别分布',
                 type: 'pie',
@@ -1709,7 +1715,7 @@
             // },
             visualMap: {
                 show: true,
-                min: 0,
+                min: 3500,
                 max: 11000,
                 left: 'left',
                 top: 'bottom',
@@ -1723,7 +1729,10 @@
                     // color: ['#0f0c29', '#302b63', '#24243e'] // 黑紫黑
                     // color: ['#23074d', '#cc5333'] // 紫红
                     // color: ['#00467F', '#A5CC82'] // 蓝绿
-                    color: ['#A5CC82', '#00467F'] // 绿蓝
+                    // color: ['#A5CC82', '#00467F'] // 绿蓝
+                    // color: ['lightskyblue', 'yellow', 'orangered']
+                    // color: ['lightskyblue', 'yellow']
+                    color: ['#edfbfb', '#b7d6f3', '#40a9ed', '#3598c1', '#215096', ]
                         // color: ['#1488CC', '#2B32B2'] // 浅蓝
                         // color: ['#00467F', '#A5CC82'] // 蓝绿
                         // color: ['#00467F', '#A5CC82'] // 蓝绿
