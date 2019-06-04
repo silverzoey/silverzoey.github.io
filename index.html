@@ -71,7 +71,7 @@
         <h2>不卖肾，攒几个月的钱够买一部IPhone XS？</h2>
         <div class="container">
             <div id="echart8"></div>
-            <div id="iphoneXS"></div>
+            <div id="iphoneXS"><img src="iphoneX.jpg"></div>
         </div>
         <p class="note">数据来源:国家统计局 采集时间：支出2018年/收入2017年</p>
         <p>在众多手机品牌中，IPhone的价格一直居于高位，每每有新品发售，就会有网友调侃“肾都不够卖了”，但玩笑归玩笑，在不卖肾的情况下，几个月存款能负担起一部高价的苹果手机呢？国家统计局的数据显示，城镇非私营单位就业人员月平均工资最高10975元，最低4637元；人均最高月消费5216元，最低2287元。据此我们可以进行一个粗略的计算，（平均工资-平均消费水平）/手机价格。在一线城市正常消费，大约攒4个月的钱就可以拥有一部IPhone XS；在二、三线城市正常生活，购买一部XS大约需要攒钱5-6个月。</p>
@@ -119,13 +119,32 @@
             width: 64%;
             float: left;
         }
+        /* .container {
+            overflow: hidden;
+            height: 400px;
+            width: 860px;
+        } */
+        /* 清除浮动 */
+        
+        .container:after {
+            /* content: "\0020";
+            display: block;
+            height: 0;
+            clear: both; */
+            clear: both;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
         
         .container {
             overflow: hidden;
             height: 400px;
-            width: 860px;
+            width: 100%;
+            zoom: 1;
         }
-        /* 清除浮动 */
         
         #echart6 {
             height: 500px;
@@ -141,29 +160,33 @@
         
         #echart8 {
             height: 400px;
-            /* width: 70%; */
-            width: 600px;
+            width: 70%;
+            /* width: 600px; */
             float: left;
             margin-right: 5px;
         }
         
         #iphoneXS {
             float: left;
-            /* width: 28.5%; */
-            width: 255px;
-            height: 400px;
-            background: url("iphoneX.jpg") no-repeat;
-            background-size: cover;
-            background-position: center center;
+            width: 28.5%;
+            /* width: 255px; */
+            height: 100%;
+            /* background: url("iphoneX.jpg") no-repeat; */
+            /* background-size: cover;
+            background-position: center center; */
         }
-        /* #iphoneXS img {
-            position: absolute;
+        
+        #iphoneXS img {
+            width: 95%;
+            height: 75%;
+            /* position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
-            margin: auto;
-        } */
+            margin: auto; */
+            margin-top: 20%;
+        }
         
         #change {
             margin: 0 auto;
@@ -182,6 +205,7 @@
         
         #background {
             margin: 0 auto;
+            /* height: 100%; */
             height: 720px;
             /* width: 1519px; */
             width: 100%;
